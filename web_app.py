@@ -1,6 +1,6 @@
 import pdfkit
-path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe' #comment this line when deploying in streamlit
-config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf) #comment this line when deploying in streamlit
+#path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe' #comment this line when deploying in streamlit
+#config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf) #comment this line when deploying in streamlit
 import os
 from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoader
 from datetime import date
@@ -116,8 +116,8 @@ if check_password():
 
         )
 
-        pdf = pdfkit.from_string(html, configuration=config) #generation of the pdf using local library, top config uncomment
-    #pdf = pdfkit.from_string(html, False)  # use this one when deploying in streamlit
+        #pdf = pdfkit.from_string(html, configuration=config) #generation of the pdf using local library, top config uncomment
+        pdf = pdfkit.from_string(html, False)  # use this one when deploying in streamlit
         st.balloons()
 
         st.success(
@@ -129,11 +129,4 @@ if check_password():
             mime="application/octet-stream",
         )
 
-
-#This file uses the virt env at
-#secret: Econ2013
-# conda deactivate
-# ..\..\..\..\..\..\Rh\Learn\_Python\myProjects\Streamlit_apps\venv4pdfgen\Scripts\activate.ps1
-#C:\Users\aembaye\OneDrive - University of Arkansas\C2-embaye\Rh\Learn\_Python\myProjects\Streamlit_apps\venv4pdfgen\Scripts
-# streamlit run ./main.py
 
