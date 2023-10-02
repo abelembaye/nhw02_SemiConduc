@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<title>title of the page invisible?</title>
+</head>
+
+<h1>{{username }}</h1>
+
+<body>
+
+1. Answer for question 1
+
+<div style="width:650px; height:10px; padding:20px; text-align:left; border: 1px solid #787878">
+
+{{ q01 }}
+
+</div>
+
+<br><br><br>
+
+Graphing sections:
+<br>
+
+{% for image_base64 in image_base64_list %}
+
+<div style="width:650px; height:500px; padding:20px; text-align:center; border: 1px solid #787878">
+
+<img src="data:image/png;base64,{{ image_base64 }}" />
+
+</div>
+<br><br>
+{% endfor %}
+
+<br><br><br>
+
+
+</body>
+</html>

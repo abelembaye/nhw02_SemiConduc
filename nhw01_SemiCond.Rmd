@@ -1,0 +1,63 @@
+---
+title: |
+      | Econ 2013-901
+      | News Analysis HW 01
+date: "Spring 2022"
+output:
+  pdf_document:
+header-includes:
+- \usepackage{pdfpages}
+- \usepackage{lastpage}
+- \usepackage{graphicx}
+- \usepackage{pgf,tikz}
+- \parskip = 2pt
+keep_tex: yes
+fontsize: 12pt
+#number_sections: yes
+urlcolor: blue
+geometry: left = 1in, right = .51in, top = .51in, bottom = 1in
+---
+
+```{r setup, include=FALSE}
+library(pdftools)
+#\pagenumbering{gobble}
+```
+
+
+***Instructions:*** Please follow the following steps to complete assignment.
+
+1. Read each question below based on the news article linked below. 
+
+2. The questions below are to be answered in a template in the following web app at URL address: 
+[streamlit_app]( https://nwh01-v6nukitsw7.streamlit.app/) . In this app you are going to enter your text answers, graph file uploads, etc and press "Generate PDF" button and wait until you get "Success" message and then press "download" button to save the pdf file in your machine that will be submitted in "gradescope"
+
+3. Use the following grapher app at the URL below for all the graphing needs (no other graphing tool is allowed)  [Grapher](https://xlitemprod.pearsoncmg.com/Grapher/Grapher.aspx?productid=ccng&appproductid=4&handler_urn=pearson%2Fccng_econ_xl%2Fslink%2Fx-pearson-ccng_econ_xl&learningproduct=VL) . After completing your graphing, save your completed graph by clicking File> save at the top. The saved file is .PNG file automatically and doesn't need adding such an extension. Give the file a name that is easy to remember for you to correspond it to the questions asked. 
+
+# The questions:
+
+Please read the following article from *Wall Stree Journal (WSJ)* titled "TSMC to Boost Chip Production With Up to $44 Billion Investment," by Yang Jie, January 13, 2022 issue. 
+[Article](https://www.proquest.com/docview/2619154138/123B20B55928445DPQ/1?accountid=8361) . Usually, you will be asked to accept all cookies and then log in to the virtual library using your uark credentials to access this article.
+
+## Question 1. 
+
+From the article: “Taiwan Semiconductor Manufacturing Co., the world’s largest contract chip maker, said it would increase its investment to boost production capacity by up to 47% this year from a year earlier as demand continues to surge amid a global chip crunch.” Firms make short-run and long-run production decisions. Is TSMC’s decision to increase production capacity a short-run or a long run-decision? Briefly explain your answer. 
+
+
+\bigskip
+To answer the questions below, draw and label a graph that depicts a downward-sloping demand curve and an upward-sloping supply curve in the market for semiconductor chips. Assume that the market price and quantity of semiconductor chips are equal to the equilibrium price and quantity. The article states: "As a pandemic-fueled surge in demand for various devices requiring semiconductors has created widespread shortages, major chip makers have been on 
+an investment spree to raise production capacity."  
+
+## Question 2. 
+
+Use your graph to depict how an increase in demand could result in a shortage of chips:
+
+
+## Question 3.
+
+Use another graph to show how an increase in investment in production capacity could eliminate the shortage you show in questions 2. Start with a graph that you have drawn in question 2. 
+
+
+```{r, echo=F}
+knitr::knit_exit()  
+```
+

@@ -1,0 +1,62 @@
+
+/* beginning of altered resume css*/
+@page{
+  size: letter portrait;
+  margin: 1in 1in 1in 1in;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1 {
+    text-align:left;
+}
+
+h2 {
+/* font-weight: bold;
+color: #fff;*/
+font-size: 18px;
+}
+
+.logo {
+  height: 150px;
+  top: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+:root{
+  --page-width: 8.5in;
+  --margin-right: 0.5in;
+  --margin-left: 0.25in;
+  --content-width: calc(var(--page-width) - var(--margin-right) - var(--margin-left));
+  --root-font-size: 11pt;
+  --sidebar-width: 15rem;
+  --sidebar-background-color: #f2f2f2;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+ /* --decorator-horizontal-margin: 0.2in;*/
+
+  --sidebar-horizontal-padding: 0.2in;
+
+  /* XXX: using px for very good precision control */
+  /*--decorator-outer-offset-top: 10px;*/
+  /*--decorator-outer-offset-left: -5.5px;*/
+  /*--decorator-border-width: 1px;*/
+  /*--decorator-outer-dim: 9px;*/
+  /*--decorator-border: 1px solid #ccc;*/
+
+  --row-blocks-padding-top: 0.5rem;
+  --date-block-width: .9in;
+
+  --main-blocks-title-icon-offset-left: calc(-17pt - 0.25 * var(--root-font-size));
+
+  --viewer-background-color: #dcdcdc;
+  --viewer-pages-spacing: 12px;
+  --viewer-shadow-color: #313131;
+}
