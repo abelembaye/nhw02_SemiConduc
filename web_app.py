@@ -10,7 +10,7 @@ import base64
 from io import BytesIO
 
 st.set_page_config(layout="centered", page_icon="", page_title=" NHW02")
-st.title("Econ 2013 News Analysis Homework 02: EV Market ")
+st.title("News Analysis Homework 02: EV Market ")
 def check_password():
     """Returns `True` if the user had the correct password."""
 
