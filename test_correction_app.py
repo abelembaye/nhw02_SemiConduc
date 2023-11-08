@@ -61,7 +61,7 @@ if check_password():
     username = form.text_input(
         label="Full NAME: Last, first", placeholder="Doe, John")
     ver = form.text_input(label="Exam version you had",
-                          placeholder="one line answer", key="ver")
+                          placeholder="Version A, B, or C", key="ver")
     form.markdown(" ")
 
     q_list = []
