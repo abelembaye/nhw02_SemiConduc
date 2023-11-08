@@ -51,9 +51,10 @@ if check_password():
         "."), autoescape=select_autoescape())
 
     template = env.get_template("template_test_corrections.html")
-    st.write("Please check the correct answer for your version of the exam and then for each question you missed, state the correct answer followed by explanation why that is the answer. As an example, check the explanations the instructor gave for each questions of the the sample exam .")
+    st.write("Please check the version of the exam 2 you had and then for each question you missed, state the correct answer followed by explanation of why that is the answer. As an example, check the explanations the instructor gave for each questions of the the sample exam.")
     st.write(" ")
-    st.write("The purpose of the this assignments is understand what you missed by any means necessary; so you can ask help from me, the tutoring service or your classmates but submit your own work with your own words.")
+    st.write("The purpose of the this assignments is to understand what you missed by any means necessary; so you can ask help from me, the tutoring service or your classmates but submit your own work with your own words. You can get a maximum of .4*(100- your current Exam grade) as a bonus. For example, if you have 60% now, you can get .4*40=16 additional points")
+    st.write("No extra point will be given for doing extra question other than what you missed")
 
     form = st.form("template_form")
 
