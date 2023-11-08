@@ -66,7 +66,7 @@ if check_password():
     q_list = []
     for i in range(42):
         quest = form.text_area(
-            label=f"question #{i + 1}",  placeholder="I got it correct", max_chars=500, key=f"q{i + 1}")
+            label=f"question #{i + 1}",  placeholder="I got it correct", height=90px, max_chars=500, key=f"q{i + 1}")
         q_list.append(quest)
 
     # st.text_area(label, value="", height=None, max_chars=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible")
