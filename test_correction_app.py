@@ -7,9 +7,9 @@ from jinja2 import Environment, PackageLoader, select_autoescape, FileSystemLoad
 import os
 import pdfkit
 # comment this line when deploying in streamlit
-path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+# path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
 # comment this line when deploying in streamlit
-config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
+#config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
 
 st.set_page_config(layout="centered", page_icon="", page_title="Exam 2")
 st.title("Exam 2 test corrections ")
@@ -91,9 +91,9 @@ if check_password():
         )
 
         # generation of the pdf using local library, top config uncomment
-        pdf = pdfkit.from_string(html, configuration=config)
+        #pdf = pdfkit.from_string(html, configuration=config)
         # use this one when deploying in streamlit
-        # pdf = pdfkit.from_string(html, False)
+        pdf = pdfkit.from_string(html, False)
         st.balloons()
 
         st.success(
